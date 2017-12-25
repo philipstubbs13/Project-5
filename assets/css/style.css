@@ -27,3 +27,11 @@
     width: 53px;
     height: 53px;
 }
+
+.navbar-nav {
+	display: inline-block;
+}
+
+.nav-item {
+	display: inline-block;
+}
