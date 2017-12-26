@@ -35,3 +35,8 @@
 .nav-item {
 	display: inline-block;
 }
+
+.card-img-top {
+	width: 225px;
+	height: 225px;
+}
