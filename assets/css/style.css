@@ -54,6 +54,7 @@
 @media screen and (max-width: 987px) {
 	.card-img-top {
 		width: 200px;
+		max-width: 400px;
 		height: 250px;
 	}
 
@@ -61,15 +62,15 @@
 /*Takes effect when the browser's width is 768px or less.*/
 @media screen and (max-width: 768px) {
 	.card-img-top {
-		width: 200px;
+		max-width: 300px;
 		height: 280px;
 	}
 
 /*Takes effect when the browser's width is 640px or less.*/
 @media screen and (max-width: 640px) {
 	.card-img-top {
-		width: 150px;
-		height: 245px;
+		max-width: 255px;
+		height: 230px;
 	}
 
 
