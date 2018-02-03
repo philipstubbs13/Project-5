@@ -1,12 +1,19 @@
+/* Sticky footer */
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
 
+  main {
+    flex: 1 0 auto;
+  }
 
 #headshot {
 	width: 250px;
 	height: 250px;
 	max-width: 100%;
 }
-
-
 
 #github-logo {
     width: 53px;
