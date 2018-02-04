@@ -22,25 +22,37 @@
 </head>
 
 <body>
+
 	<!--Fixed Navbar-->
-	<div class="navbar-fixed">
+	<div>
 		<nav class="navbar navbar-expand navbar-light bg-dark">
-		  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-		    <div class="navbar-nav nav-pills text-center">
-		      <a class="nav-item nav-link mr-4 pr-3 pl-3 text-white" href="#about">About <span class="sr-only">(current)</span></a>
-		      <a class="nav-item nav-link mr-4 text-white pr-3 pl-3" href="#portfolio">Portfolio</a>
-		      <a class="nav-item nav-link text-white pr-3 pl-3" href="#lets-talk">Contact</a>
-		    </div>
-		  </div>
+			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+		   		<div class="navbar-nav nav-pills text-center">
+		    		<a class="nav-item nav-link mr-4 pr-3 pl-3 text-white" href="#about">About <span class="sr-only">(current)</span></a>
+		    		<a class="nav-item nav-link mr-4 text-white pr-3 pl-3" href="#portfolio">Portfolio</a>
+		    		<a class="nav-item nav-link text-white pr-3 pl-3" href="#lets-talk">Contact</a>
+				</div>
+			</div>
+
+			<div id="slide-out" class="side-nav fixed">
+				<h4 class="black-text mt-4 text-center">Phil Stubbs</h4>
+				<p class="black-text text-center">Developer, UX Designer, Project Manager</p>
+				<ul>
+				    <li><a href="#about">About</a></li>
+				    <li><a href="#portfolio">Portfolio</a></li>
+				    <li><a href="#lets-talk">Contact</a></li>
+				</ul>
+				<a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+			</div>
 		</nav>
 	</div>
 
 	<!--Introduction/Bio section-->
 	<div id="about" class="jumbotron col-md-12 text-center bg-dark text-white section scrollspy">
 		<h1 class="display-3">Hi, I'm Phil</h1>
-		<h3 class="lead">I design and build user interfaces.</h3>
+		<h3 class="lead">Developer, UX Designer, Project Manager</h3>
 		<hr class="my-4">
-		<p  id="bio-statement">I'm a clean, minimalist front end developer. I'm interested in learning how technology impacts the design and user experience of the web. Exploration, determination, and strategic thinking are why I'm interested in web development and design. I enjoy uncovering the mysteries of front end development, and I look forward to opportunties where I can continue to learn and grow as a developer, designer, and writer for the web.</p>
+		<p  class="pl-3" id="bio-statement">I'm a clean, minimalist front end developer. I'm interested in learning how technology impacts the design and user experience of the web. Exploration, determination, and strategic thinking are why I'm interested in web development and design. I enjoy uncovering the mysteries of front end development, and I look forward to opportunties where I can continue to learn and grow as a developer, designer, and writer for the web.</p>
 		<img class="rounded-circle img-fluid mb-3" src="assets/images/me.jpg" alt="Phil Stubbs selfie" id="headshot">
 		<p class="lead">
     		<a class="pr-2 social" href="https://github.com/philipstubbs13" target="_blank"><img src="assets/images/if_mark-github_298822.svg" alt="GitHub icon" id="github-logo"></a>

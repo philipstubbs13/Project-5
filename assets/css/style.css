@@ -59,6 +59,18 @@
 	line-height: 30px;
 }
 
+/*offset content by the width of the side menu. 
+Place the padding on where the offset content will be, which in our case is in navbar, #about, #portfolio, and #lets-tak */
+.navbar, #about, #portfolio, #lets-talk {
+  padding-left: 300px;
+}
+
+@media only screen and (max-width : 992px) {
+  .navbar, #about, #portfolio, #lets-talk  {
+    padding-left: 0;
+  }
+}
+
 /*Takes effect when the browser's width is 987px or less.*/
 @media screen and (max-width: 987px) {
 	.card-img-top {
