@@ -1,2 +1,4 @@
-//Call portfolio carousel.
-$('.carousel').carousel();
+ $(document).ready(function(){
+    $('.scrollspy').scrollSpy();
+  });
+        
