@@ -20,21 +20,27 @@
 	<!--Bootstrap CDN link-->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 </head>
-<body class="bg-dark">
-	<nav class="navbar navbar-expand navbar-light bg-dark">
-	  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-	    <div class="navbar-nav nav-pills text-center">
-	      <a class="nav-item nav-link mr-4 pr-3 pl-3 text-white" href="index.html">About <span class="sr-only">(current)</span></a>
-	      <a class="nav-item nav-link mr-4 text-white pr-3 pl-3" href="portfolio.html">Portfolio</a>
-	      <a class="nav-item nav-link text-white pr-3 pl-3" href="contact.html">Contact</a>
-	    </div>
-	  </div>
-	</nav>
-	<div class="jumbotron col-md-12 text-center bg-dark">
-		<h1 class="display-3 text-white">Hi, I'm Phil</h1>
-		<h3 class="lead text-white">I design and build user interfaces.</h3>
+
+<body>
+	<!--Fixed Navbar-->
+	<div class="navbar-fixed">
+		<nav class="navbar navbar-expand navbar-light bg-dark">
+		  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+		    <div class="navbar-nav nav-pills text-center">
+		      <a class="nav-item nav-link mr-4 pr-3 pl-3 text-white" href="#about">About <span class="sr-only">(current)</span></a>
+		      <a class="nav-item nav-link mr-4 text-white pr-3 pl-3" href="#portfolio">Portfolio</a>
+		      <a class="nav-item nav-link text-white pr-3 pl-3" href="#lets-talk">Contact</a>
+		    </div>
+		  </div>
+		</nav>
+	</div>
+
+	<!--Introduction/Bio section-->
+	<div id="about" class="jumbotron col-md-12 text-center bg-dark text-white section scrollspy">
+		<h1 class="display-3">Hi, I'm Phil</h1>
+		<h3 class="lead">I design and build user interfaces.</h3>
 		<hr class="my-4">
-		<p class="text-white" id="bio-statement">I'm a clean, minimalist front end developer. I'm interested in learning how technology impacts the design and user experience of the web. Exploration, determination, and strategic thinking are why I'm interested in web development and design. I enjoy uncovering the mysteries of front end development, and I look forward to opportunties where I can continue to learn and grow as a developer, designer, and writer for the web.</p>
+		<p  id="bio-statement">I'm a clean, minimalist front end developer. I'm interested in learning how technology impacts the design and user experience of the web. Exploration, determination, and strategic thinking are why I'm interested in web development and design. I enjoy uncovering the mysteries of front end development, and I look forward to opportunties where I can continue to learn and grow as a developer, designer, and writer for the web.</p>
 		<img class="rounded-circle img-fluid mb-3" src="assets/images/me.jpg" alt="Phil Stubbs selfie" id="headshot">
 		<p class="lead">
     		<a class="pr-2 social" href="https://github.com/philipstubbs13" target="_blank"><img src="assets/images/if_mark-github_298822.svg" alt="GitHub icon" id="github-logo"></a>
@@ -44,17 +50,230 @@
 		</p>
 	</div>
 
-	<footer class="page-footer bg-dark">
+	<div id="portfolio" class="container section scrollspy">
+		<div class="row">
+			<div class="col s12 mb-4 mt-4 text-center" id="projects">
+				<h1>Portfolio</h1>
+			</div>
+		</div>
+
+		<!--Portfolio pieces-->
+	    <div class="row mb-4">
+	      <div class="col s6 m12 s12">
+	        <div class="card">
+	          <div class="card-image waves-effect waves-block waves-light">
+	            <img class="activator card-img-top" src="assets/images/liri-node.png" alt="Liri command line app">
+	          </div>
+	          <div class="card-content">
+	            <span class="card-title activator grey-text text-darken-4">LIRI<i class="material-icons right">more_vert</i></span>
+	          </div>
+	          <div class="card-action">
+	            <a href="https://github.com/philipstubbs13/liri-node-app" class="mt-1" target="_blank">Code view</a>
+	          </div>
+	          <div class="card-reveal">
+	            <span class="card-title grey-text text-darken-4">About this project<i class="material-icons right">close</i></span>
+	            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+	          </div>
+	        </div>
+
+	        <div class="card">
+	          <div class="card-image waves-effect waves-block waves-light">
+	            <img class="activator card-img-top" src="assets/images/mytrainbuilder.png" alt="myTrainBuilder">
+	          </div>
+	          <div class="card-content">
+	            <span class="card-title activator grey-text text-darken-4">myTrainBuilder<i class="material-icons right">more_vert</i></span>
+	          </div>
+	          <div class="card-reveal">
+	            <span class="card-title grey-text text-darken-4">About this project<i class="material-icons right">close</i></span>
+	            <p>A train schedule application that incorporates Firebase to host arrival and departure data.</p>
+	          </div>
+	          <div class="card-action">
+	            <a href="https://fir-train-scheduler-7f4a9.firebaseapp.com/" class="mt-1 mr-2" target="_blank">Live view</a>
+	            <a href="https://github.com/philipstubbs13/Firebase-Train-Scheduler" class="mt-1" target="_blank">Code view</a>
+	          </div>
+	        </div>
+
+	        <div class="card">
+	          <div class="card-image waves-effect waves-block waves-light">
+	            <img class="activator card-img-top" src="assets/images/trivia2.png" alt="Trivia Game">
+	          </div>
+	          <div class="card-content">
+	            <span class="card-title activator">Trivia Game<i class="material-icons right">more_vert</i></span>
+	          </div>
+	          <div class="card-action">
+	            <a  href="https://philipstubbs13.github.io/TriviaGame/index.html" class="mr-2" target="_blank">Live view</a>
+	            <a href="https://github.com/philipstubbs13/TriviaGame" class="mt-1" target="_blank">Code view</a>
+	          </div>
+	          <div class="card-reveal">
+	            <span class="card-title grey-text text-darken-4">About this project<i class="material-icons right">close</i></span>
+	            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+	          </div>
+	        </div>
+
+	        <div class="card">
+	          <div class="card-image waves-effect waves-block waves-light">
+	            <img class="activator card-img-top" src="assets/images/crystal.PNG" alt="Crystal Collectors">
+	          </div>
+	          <div class="card-content">
+	            <span class="card-title activator">Crystal Collectors<i class="material-icons right">more_vert</i></span>
+	          </div>
+	          <div class="card-action">
+	            <a href="https://philipstubbs13.github.io/week-4-game/index.html" class="mr-2" target="_blank">Live view</a>
+	            <a href="https://github.com/philipstubbs13/week-4-game" class="mt-1" target="_blank">Code view</a>
+	          </div>
+	          <div class="card-reveal">
+	            <span class="card-title grey-text text-darken-4">About this project<i class="material-icons right">close</i></span>
+	            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+	          </div>
+	        </div>
+
+	        <div class="card">
+	          <div class="card-image waves-effect waves-block waves-light">
+	            <img class="activator card-img-top" src="assets/images/hangman2.png" alt="Hangman">
+	          </div>
+	          <div class="card-content">
+	            <span class="card-title activator">Hangman<i class="material-icons right">more_vert</i></span>
+	          </div>
+	          <div class="card-action">
+	            <a href="https://philipstubbs13.github.io/Hangman-Game/index.html" class="mt-1 mr-2" target="_blank">Live view</a>
+	            <a href="https://github.com/philipstubbs13/Hangman-Game" class="mt-1" target="_blank">Code view</a>
+	          </div>
+	          <div class="card-reveal">
+	            <span class="card-title grey-text text-darken-4">About this project<i class="material-icons right">close</i></span>
+	            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+	          </div>
+	        </div>
+	      </div>
+
+	      <div class="col l6 m12 s12">
+	        <div class="card">
+	          <div class="card-image waves-effect waves-block waves-light">
+	            <img class="activator card-img-top" src="assets/images/mycookingassistant.png" alt="MyCookingAssistant app">
+	          </div>
+	          <div class="card-content">
+	            <span class="card-title activator grey-text text-darken-4">MyCookingAssistant<i class="material-icons right">more_vert</i></span>
+	          </div>
+	          <div class="card-action">
+	            <a href="https://longshotauth.firebaseapp.com/" class="mt-1 mr-2" target="_blank">Live view</a>
+	            <a href="https://github.com/philipstubbs13/Project-Longshot" class="mt-1" target="_blank">Code view</a>
+	          </div>
+	          <div class="card-reveal">
+	            <span class="card-title grey-text text-darken-4">About this project<i class="material-icons right">close</i></span>
+	            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+	          </div>
+	        </div>
+
+	        <div class="card">
+	          <div class="card-image waves-effect waves-block waves-light">
+	            <img class="activator card-img-top" src="assets/images/starwars.png" alt="Star Wars role playing game">
+	          </div>
+	          <div class="card-content">
+	            <span class="card-title activator grey-text text-darken-4">Star Wars Game<i class="material-icons right">more_vert</i></span>
+	          </div>
+	          <div class="card-action">
+	              <a href="https://philipstubbs13.github.io/Star-Wars-RPG-Game/index.html" class="mt-1 mr-2" target="_blank">Live view</a>
+	              <a href="https://github.com/philipstubbs13/Star-Wars-RPG-Game" class="mt-1" target="_blank">Code view</a>
+	          </div>
+	          <div class="card-reveal">
+	            <span class="card-title grey-text text-darken-4">About this project<i class="material-icons right">close</i></span>
+	            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+	          </div>
+	        </div>
+
+	        <div class="card">
+	          <div class="card-image waves-effect waves-block waves-light">
+	            <img class="activator card-img-top" src="assets/images/giffinder.PNG" alt="Athlete hall of gifs">
+	          </div>
+	          <div class="card-content">
+	            <span class="card-title activator">Athlete hall of gifs<i class="material-icons right">more_vert</i></span>
+	          </div>
+	          <div class="card-action">
+	            <a href="https://philipstubbs13.github.io/Giphy-API-Project/index.html" class="mt-1 mr-2" target="_blank">Live view</a>
+	            <a href="https://github.com/philipstubbs13/Giphy-API-Project" class="mt-1" target="_blank">Code view</a>
+	          </div>
+	          <div class="card-reveal">
+	            <span class="card-title grey-text text-darken-4">About this project<i class="material-icons right">close</i></span>
+	            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+	          </div>
+	        </div>
+
+	        <div class="card">
+	          <div class="card-image waves-effect waves-block waves-light">
+	            <img class="activator card-img-top" src="assets/images/bootstrap.png" alt="Portfolio with Bootstrap">
+	          </div>
+	          <div class="card-content">
+	            <span class="card-title activator">Bootstrap Portolio<i class="material-icons right">more_vert</i></span>
+	          </div>
+	          <div class="card-action">
+	            <a href="https://philipstubbs13.github.io/Bootstrap-Portfolio/index.html" class="mt-1 mr-2" target="_blank">Live view</a>
+	            <a href="https://github.com/philipstubbs13/Bootstrap-Portfolio" class="mt-1" target="_blank">Code view</a>
+	          </div>
+	          <div class="card-reveal">
+	            <span class="card-title grey-text text-darken-4">About this project<i class="material-icons right">close</i></span>
+	            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+	          </div>
+	        </div>
+
+	        <div class="card">
+	          <div class="card-image waves-effect waves-block waves-light">
+	            <img class="activator card-img-top" src="assets/images/regular-portfolio.PNG" alt="Portfolio without Bootstrap">
+	          </div>
+	          <div class="card-content">
+	            <span class="card-title activator grey-text text-darken-4">Responsive Portfolio<i class="material-icons right">more_vert</i></span>
+	          </div>
+	          <div class="card-action">
+	            <a href="https://philipstubbs13.github.io/Responsive-Portfolio/index.html" class="mt-1 mr-2" target="_blank">Live view</a>
+	            <a href="https://github.com/philipstubbs13/Responsive-Portfolio" class="mt-1" target="_blank">Code view</a>
+	          </div>
+	          <div class="card-reveal">
+	            <span class="card-title grey-text text-darken-4">About this project<i class="material-icons right">close</i></span>
+	            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+	          </div>
+	        </div>
+	      </div>
+	    </div>
+	</div>
+
+	<!--My contact info section-->
+	<div id="lets-talk" class="bg-dark section scrollspy">
+	    <div class="row bg-dark">
+			<div class="col-md-12 mb-3 mt-4 text-center text-white" id="contact">
+				<h1>Let's talk!</h1>
+				<h4>Want to get in touch or talk to me about a project?</h4>
+			</div>
+		</div>
+
+		<div class="row bg-dark">
+			<div class="col-md-12 mb-3 text-center text-white">
+				<h5 class="mb-2">Send me an email</h5>
+				<p>philipstubbs13@gmail.com</p>
+			</div>
+		</div>
+
+		<div class="row bg-dark">
+			<div class="col-md-12 mb-3 text-center text-white">
+				<h5 class="mb-3">Let's get social. Follow me on GitHub, LinkedIn, Twitter, and Facebook.</h5>
+				<a class="pr-2 social" href="https://github.com/philipstubbs13" target="_blank"><img src="assets/images/if_mark-github_298822.svg" alt="GitHub icon" id="github-logo"></a>
+				<a class="pr-2 social" href="https://www.linkedin.com/in/philipjstubbs/" target="_blank"><img src="assets/images/if_Linkedin_381380.svg" alt="LinkedIn icon" id="linkedin-logo"></a>
+				<a class="social" href="https://twitter.com/iamPhilStubbs" target="_blank"><img src="assets/images/if_Twitter_381374.svg" alt="Twitter icon" id="twitter-logo"></a>
+				<a class="pr-2 social" href="https://www.facebook.com/phil.stubbs.13" target="_blank"><img src="assets/images/if_Facebook_381389.svg" alt="Facebook icon" id="facebook-logo"></a>
+			</div>
+		</div>
+	</div>
+
+
+
+<!-- 	<footer class="page-footer bg-dark">
 	    <div class="container">
 	      <div class="row">
 	        <div class="col l6 s12">
-	          <!-- <h5 class="white-text">Phil Stubbs</h5> -->
+	          <h5 class="white-text">Phil Stubbs</h5>
 	        </div>
 	        <div class="col l4 offset-l2 s12">
-<!-- 	          <ul>
+	          <ul>
 	            <li><a class="grey-text text-lighten-3" href="#!">More about me</a></li>
 	            <li><a class="grey-text text-lighten-3" href="#!">Blog</a></li>
-	          </ul> -->
+	          </ul>
 	        </div>
 	      </div>
 	    </div>
@@ -63,6 +282,6 @@
 	      © 2018 Phil Stubbs
 	    </div>
 	   </div>
-	</footer>
+	</footer> -->
 </body>
 </html>
