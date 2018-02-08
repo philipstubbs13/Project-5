@@ -9,5 +9,8 @@ $(".button-collapse").sideNav();
 $('.collapsible').collapsible();
   // Show sideNav
   $('.button-collapse').sideNav('show');
+
+
+// $(".portfolio-stuff").hide();
  
         

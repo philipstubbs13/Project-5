@@ -1,3 +1,23 @@
+/*body {
+
+background: url(background2.jpg) no-repeat center center fixed;
+
+-webkit-background-size: 100% auto;
+
+-moz-background-size: 100% auto;
+
+-ms-background-size: 100% auto;
+
+-o-background-size: 100% auto;
+
+background-size: 100% auto;
+
+}*/
+
+#name-block {
+	margin-top: 130px;
+}
+
 /*Adding margin to the top of the portfolio cards so page doesn't look so cluttered*/
 .card {
 	margin-top: 40px;
