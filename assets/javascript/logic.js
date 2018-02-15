@@ -11,6 +11,4 @@ $('.collapsible').collapsible();
   $('.button-collapse').sideNav('show');
 
 
-// $(".portfolio-stuff").hide();
- 
         
