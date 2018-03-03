@@ -32,25 +32,15 @@
 <body>
 
 	<!--Navbar-->
+  	<!--Top navigation bar-->
 	<nav class="navbar navbar-expand navbar-light bg-dark">
-		<a href="#" data-activates="dropdown1" class="dropdown-button button-collapse"><i class="material-icons">menu</i></a>
-		<div id="slide-out" class="side-nav fixed">
-			<h4 class="black-text mt-4 text-center">Phil Stubbs</h4>
-			<ul class="text-center">
-			    <li><a href="#about">About</a></li>
-			    <li><a href="#promotion">What I offer</a></li>
-			    <li><a href="#projects">Portfolio</a></li>
-			    <li><a href="#lets-talk">Contact</a></li>
-			</ul>
-		</div>
-
-		<!-- Dropdown Structure -->
-		<ul id='dropdown1' class='dropdown-content'>
-			<li><a href="#about">About</a></li>
-			<li><a href="#promotion">What I offer</a></li>
-		    <li><a href="#projects">Portfolio</a></li>
-		    <li><a href="#lets-talk">Contact</a></li>
-		</ul>
+	  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+	    <div class="navbar-nav nav-pills text-center">
+	      <a class="nav-item nav-link mr-4 text-white pr-3 pl-3" href="index.html">About <span class="sr-only">(current)</span></a>
+	      <a class="nav-item nav-link mr-4 pr-3 pl-3 text-white" href="portfolio.html">Portfolio</a>
+	      <a class="nav-item nav-link text-white pr-3 pl-3" href="contact.html">Contact</a>
+	    </div>
+	  </div>
 	</nav> 
 
 	<!--Introduction/Bio section-->
@@ -58,8 +48,6 @@
 		<h1 class="display-3">Hi, I'm Phil</h1>
 		<h3 class="lead">Web Developer. Project Manager. Tech Enthusiast.</h3>
 		<hr class="my-4">
-<!-- 		<p  class="pl-3" id="bio-statement">I'm a clean, minimalist front end developer. I'm interested in learning how technology impacts the design and user experience of the web. Exploration, determination, and strategic thinking are why I'm interested in web development and design. I enjoy uncovering the mysteries of front end development, and I look forward to opportunties where I can continue to learn and grow as a developer, designer, and writer for the web.</p> -->
-
 		<p><b>Web Developer</b> who is passionate about designing experiences that make people’s lives simple.</p>
 		<p><b>Project Manager</b> who can resolve problems quickly and keep teams moving forward.</p>
 		<p><b>Tech Enthusiast</b> who loves learning about new tools and technologies.</p>
@@ -71,6 +59,7 @@
 			<a class="pr-2 social" href="https://www.facebook.com/phil.stubbs.13" target="_blank"><img src="assets/images/if_Facebook_381389.svg" alt="Facebook icon" id="facebook-logo"></a>
 			<a class="social" href="https://twitter.com/iamPhilStubbs" target="_blank"><img src="assets/images/if_Twitter_381374.svg" alt="Twitter icon" id="twitter-logo"></a>
 		</p>
+		<a class="btn-large rounded black-text mt-4 blue lighten-2" href="portfolio.html">Projects</a>
 	</div>
 
 	<main>
@@ -94,230 +83,6 @@
 		    		<img src="assets/images/user.svg" class="promotion-images" alt="male user">
 		    	</div>
 			</div>
-
-			<div class="row">
-				<div class="col s12 mt-5 text-center" id="projects">
-					<h1>Portfolio</h1>
-				</div>
-			</div>
-
-			<!--Portfolio pieces-->
-		    <div class="row mb-4">
-		      <div class="col s6 m12 s12">
-		      	<div class="card">
-		          <div class="card-image waves-effect waves-block waves-light">
-		            <img class="activator card-img-top" src="assets/images/bamazon.jpg" alt="Bamazon">
-		            <!--Photo by Nadim Merrikh on Unsplash-->
-		          </div>
-		          <div class="card-content">
-		            <span class="card-title activator grey-text text-darken-4">Bamazon<i class="material-icons right">more_vert</i></span>
-		          </div>
-		          <div class="card-action">
-		            <a href="https://github.com/philipstubbs13/Bamazon" class="mt-1" target="_blank">Code view</a>
-		          </div>
-		          <div class="card-reveal">
-		            <span class="card-title grey-text text-darken-4">About this project<i class="material-icons right">close</i></span>
-		            <p>Here is some more information about this product that is only revealed once clicked on.</p>
-		          </div>
-		        </div>
-		        
-		        <div class="card">
-		          <div class="card-image waves-effect waves-block waves-light">
-		            <img class="activator card-img-top" src="assets/images/twitter.jpg" alt="Liri command line app">
-		            <!--Photo by freestocks.org on Unsplash-->
-		          </div>
-		          <div class="card-content">
-		            <span class="card-title activator grey-text text-darken-4">LIRI<i class="material-icons right">more_vert</i></span>
-		          </div>
-		          <div class="card-action">
-		            <a href="https://github.com/philipstubbs13/liri-node-app" class="mt-1" target="_blank">Code view</a>
-		          </div>
-		          <div class="card-reveal">
-		            <span class="card-title grey-text text-darken-4">About this project<i class="material-icons right">close</i></span>
-		            <p>Here is some more information about this product that is only revealed once clicked on.</p>
-		          </div>
-		        </div>
-
-		        <div class="card">
-		          <div class="card-image waves-effect waves-block waves-light">
-		            <img class="activator card-img-top" src="assets/images/train.jpg" alt="myTrainBuilder">
-		            <!--Photo by Jake Sloop on Unsplash-->
-		          </div>
-		          <div class="card-content">
-		            <span class="card-title activator grey-text text-darken-4">myTrainBuilder<i class="material-icons right">more_vert</i></span>
-		          </div>
-		          <div class="card-reveal">
-		            <span class="card-title grey-text text-darken-4">About this project<i class="material-icons right">close</i></span>
-		            <p>A train schedule application that incorporates Firebase to host arrival and departure data.</p>
-		          </div>
-		          <div class="card-action">
-		            <a href="https://fir-train-scheduler-7f4a9.firebaseapp.com/" class="mt-1 mr-2" target="_blank">Live view</a>
-		            <a href="https://github.com/philipstubbs13/Firebase-Train-Scheduler" class="mt-1" target="_blank">Code view</a>
-		          </div>
-		        </div>
-
-		        <div class="card">
-		          <div class="card-image waves-effect waves-block waves-light">
-		            <img class="activator card-img-top" src="assets/images/football.jpg" alt="Trivia Game">
-		            <!--Photo by Ben Hershey on Unsplash-->
-		          </div>
-		          <div class="card-content">
-		            <span class="card-title activator">Trivia Game<i class="material-icons right">more_vert</i></span>
-		          </div>
-		          <div class="card-action">
-		            <a  href="https://philipstubbs13.github.io/TriviaGame/index.html" class="mr-2" target="_blank">Live view</a>
-		            <a href="https://github.com/philipstubbs13/TriviaGame" class="mt-1" target="_blank">Code view</a>
-		          </div>
-		          <div class="card-reveal">
-		            <span class="card-title grey-text text-darken-4">About this project<i class="material-icons right">close</i></span>
-		            <p>Here is some more information about this product that is only revealed once clicked on.</p>
-		          </div>
-		        </div>
-
-		        <div class="card">
-		          <div class="card-image waves-effect waves-block waves-light">
-		            <img class="activator card-img-top" src="assets/images/crystalclear.jpg" alt="Crystal Collectors">
-		            <!--Photo by Hao Zhang on Unsplash-->
-		          </div>
-		          <div class="card-content">
-		            <span class="card-title activator">Crystal Collectors<i class="material-icons right">more_vert</i></span>
-		          </div>
-		          <div class="card-action">
-		            <a href="https://philipstubbs13.github.io/week-4-game/index.html" class="mr-2" target="_blank">Live view</a>
-		            <a href="https://github.com/philipstubbs13/week-4-game" class="mt-1" target="_blank">Code view</a>
-		          </div>
-		          <div class="card-reveal">
-		            <span class="card-title grey-text text-darken-4">About this project<i class="material-icons right">close</i></span>
-		            <p>Here is some more information about this product that is only revealed once clicked on.</p>
-		          </div>
-		        </div>
-
-		        <div class="card">
-		          <div class="card-image waves-effect waves-block waves-light">
-		            <img class="activator card-img-top" src="assets/images/basketball.jpg" alt="Hangman">
-		            <!--Photo by Andy Abelein on Unsplash-->
-		          </div>
-		          <div class="card-content">
-		            <span class="card-title activator">Hangman<i class="material-icons right">more_vert</i></span>
-		          </div>
-		          <div class="card-action">
-		            <a href="https://philipstubbs13.github.io/Hangman-Game/index.html" class="mt-1 mr-2" target="_blank">Live view</a>
-		            <a href="https://github.com/philipstubbs13/Hangman-Game" class="mt-1" target="_blank">Code view</a>
-		          </div>
-		          <div class="card-reveal">
-		            <span class="card-title grey-text text-darken-4">About this project<i class="material-icons right">close</i></span>
-		            <p>Here is some more information about this product that is only revealed once clicked on.</p>
-		          </div>
-		        </div>
-		      </div>
-
-		      <div class="col l6 m12 s12">
-		      	<div class="card">
-		          <div class="card-image waves-effect waves-block waves-light">
-		            <img class="activator card-img-top" src="assets/images/traffic_buddy.jpg" alt="Traffic Buddy">
-		          </div>
-		          <div class="card-content">
-		            <span class="card-title activator grey-text text-darken-4">Carpool Buddy<i class="material-icons right">more_vert</i></span>
-		          </div>
-		          <div class="card-action">
-		          	<a href="https://blooming-lowlands-71441.herokuapp.com/" class="mt-1 mr-2" target="_blank">Live view</a>
-		            <a href="https://github.com/philipstubbs13/FriendFinder" class="mt-1" target="_blank">Code view</a>
-		          </div>
-		          <div class="card-reveal">
-		            <span class="card-title grey-text text-darken-4">About this project<i class="material-icons right">close</i></span>
-		            <p>Here is some more information about this product that is only revealed once clicked on.</p>
-		          </div>
-		        </div>
-
-		      	<div class="card">
-		          <div class="card-image waves-effect waves-block waves-light">
-		            <img class="activator card-img-top" src="assets/images/minneapolis.jpg" alt="Minneapolis skyline">
-		            <!--Photo by Daniel McCullough on Unsplash-->
-		          </div>
-		          <div class="card-content">
-		            <span class="card-title activator grey-text text-darken-4">Constructor Hangman<i class="material-icons right">more_vert</i></span>
-		          </div>
-		          <div class="card-action">
-		            <a href="https://github.com/philipstubbs13/constructor-hangman" class="mt-1" target="_blank">Code view</a>
-		          </div>
-		          <div class="card-reveal">
-		            <span class="card-title grey-text text-darken-4">About this project<i class="material-icons right">close</i></span>
-		            <p>Here is some more information about this product that is only revealed once clicked on.</p>
-		          </div>
-		        </div>
-
-		        <div class="card">
-		          <div class="card-image waves-effect waves-block waves-light">
-		            <img class="activator card-img-top" src="assets/images/pizza.jpg" alt="MyCookingAssistant app">
-		            <!--Photo by ivan Torres on Unsplash-->
-		          </div>
-		          <div class="card-content">
-		            <span class="card-title activator grey-text text-darken-4">MyCookingAssistant<i class="material-icons right">more_vert</i></span>
-		          </div>
-		          <div class="card-action">
-		            <a href="https://longshotauth.firebaseapp.com/" class="mt-1 mr-2" target="_blank">Live view</a>
-		            <a href="https://github.com/philipstubbs13/Project-Longshot" class="mt-1" target="_blank">Code view</a>
-		          </div>
-		          <div class="card-reveal">
-		            <span class="card-title grey-text text-darken-4">About this project<i class="material-icons right">close</i></span>
-		            <p>Here is some more information about this product that is only revealed once clicked on.</p>
-		          </div>
-		        </div>
-
-		        <div class="card">
-		          <div class="card-image waves-effect waves-block waves-light">
-		            <img class="activator card-img-top" src="assets/images/starwars.jpg" alt="Star Wars role playing game">
-		            <!--Photo by James Pond on Unsplash-->
-		          </div>
-		          <div class="card-content">
-		            <span class="card-title activator grey-text text-darken-4">Star Wars Game<i class="material-icons right">more_vert</i></span>
-		          </div>
-		          <div class="card-action">
-		              <a href="https://philipstubbs13.github.io/Star-Wars-RPG-Game/index.html" class="mt-1 mr-2" target="_blank">Live view</a>
-		              <a href="https://github.com/philipstubbs13/Star-Wars-RPG-Game" class="mt-1" target="_blank">Code view</a>
-		          </div>
-		          <div class="card-reveal">
-		            <span class="card-title grey-text text-darken-4">About this project<i class="material-icons right">close</i></span>
-		            <p>Here is some more information about this product that is only revealed once clicked on.</p>
-		          </div>
-		        </div>
-
-		        <div class="card">
-		          <div class="card-image waves-effect waves-block waves-light">
-		            <img class="activator card-img-top" src="assets/images/sports.jpg" alt="Athlete hall of gifs">
-		            <!--Photo by NeONBRAND on Unsplash-->
-		          </div>
-		          <div class="card-content">
-		            <span class="card-title activator">Athlete hall of gifs<i class="material-icons right">more_vert</i></span>
-		          </div>
-		          <div class="card-action">
-		            <a href="https://philipstubbs13.github.io/Giphy-API-Project/index.html" class="mt-1 mr-2" target="_blank">Live view</a>
-		            <a href="https://github.com/philipstubbs13/Giphy-API-Project" class="mt-1" target="_blank">Code view</a>
-		          </div>
-		          <div class="card-reveal">
-		            <span class="card-title grey-text text-darken-4">About this project<i class="material-icons right">close</i></span>
-		            <p>Here is some more information about this product that is only revealed once clicked on.</p>
-		          </div>
-		        </div>
-
-		        <div class="card">
-		          <div class="card-image waves-effect waves-block waves-light">
-		            <img class="activator card-img-top" src="assets/images/bootstrap.png" alt="Portfolio with Bootstrap">
-		          </div>
-		          <div class="card-content">
-		            <span class="card-title activator">Bootstrap Portolio<i class="material-icons right">more_vert</i></span>
-		          </div>
-		          <div class="card-action">
-		            <a href="https://philipstubbs13.github.io/Bootstrap-Portfolio/index.html" class="mt-1 mr-2" target="_blank">Live view</a>
-		            <a href="https://github.com/philipstubbs13/Bootstrap-Portfolio" class="mt-1" target="_blank">Code view</a>
-		          </div>
-		          <div class="card-reveal">
-		            <span class="card-title grey-text text-darken-4">About this project<i class="material-icons right">close</i></span>
-		            <p>Here is some more information about this product that is only revealed once clicked on.</p>
-		          </div>
-		        </div>
-		      </div>
-		    </div>
 		</div>
 	</main>
 
