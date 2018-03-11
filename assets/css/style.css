@@ -1,3 +1,9 @@
+/* Google font - Lato */
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+/* Resume, Projects, and Contact links on About/Home page*/
 .groovy-btn {
 	text-decoration: none;
 }
