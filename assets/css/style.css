@@ -3,9 +3,26 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+/* Live button color */
+.live-btn {
+    background-color: #64b5f6;
+}
+
+/*GitHub Repo button color*/
+.github-btn {
+    background-color: #ffa726;
+}
+
+/*Styling for cards on portfolio page */
+.project-card {
+    border-style: solid;
+    border-color: black;
+}
+
 /* Resume, Projects, and Contact links on About/Home page*/
 .groovy-btn {
-	text-decoration: none;
+    text-decoration: none;
+    background-color: #64b5f6;
 }
 
 .promotion-images {
