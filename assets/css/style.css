@@ -3,6 +3,12 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+/* Accordion header color */
+#headingOne, #headingThree, #headingFive, #headingTwo, #headingFour {
+    background-color: #800000;
+    color: #ffd700;
+}
+
 /* Live button color */
 .live-btn {
     background-color: #87cefa;
@@ -22,7 +28,8 @@ body {
 /* Resume, Projects, and Contact links on About/Home page*/
 .groovy-btn {
     text-decoration: none;
-    background-color: #87cefa;
+    background-color: #800000;
+    color: #ffd700;
 }
 
 .promotion-images {
