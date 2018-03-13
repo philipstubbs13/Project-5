@@ -11,12 +11,12 @@ body {
 
 /* Live button color */
 .live-btn {
-    background-color: #87cefa;
+    background-color:#ffd700;
 }
 
 /*GitHub Repo button color*/
 .github-btn {
-    background-color: orange;
+    background-color: #800000;
 }
 
 /*Styling for cards on portfolio page */
