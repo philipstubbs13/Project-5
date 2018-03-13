@@ -108,6 +108,25 @@ body {
 	line-height: 30px;
 }
 
+/* Sticky footer code below*/
+
+   body {
+    height: 100%;
+  }
+  .page-wrap {
+    min-height: 100%;
+    /* equal to footer height */
+    margin-bottom: -100px; 
+  }
+  .page-wrap:after {
+    content: "";
+    display: block;
+  }
+  .site-footer, .page-wrap:after {
+    height: 142px; 
+  }
+ 
+
 
 
 
