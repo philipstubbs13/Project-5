@@ -109,6 +109,7 @@ body {
 }
 
 /* Sticky footer code below*/
+/* https://css-tricks.com/snippets/css/sticky-footer/*/
 
    body {
     height: 100%;
