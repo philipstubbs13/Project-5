@@ -4,7 +4,7 @@ body {
 }
 
 /* Accordion header color */
-#headingOne, #headingThree, #headingFive, #headingTwo, #headingFour {
+#headingOne, #headingThree, #headingFive, #headingTwo, #headingFour, #headingSix {
     background-color: #800000;
     color: #ffd700;
 }
