@@ -109,22 +109,16 @@ body {
 }
 
 /* Sticky footer code below*/
-/* https://css-tricks.com/snippets/css/sticky-footer/*/
 
-   body {
-    height: 100%;
+  .Site {
+    /* display: flex; */
+    min-height: 100vh;
+    flex-direction: column;
   }
-  .page-wrap {
-    min-height: 100%;
-    /* equal to footer height */
-    margin-bottom: -100px; 
-  }
-  .page-wrap:after {
-    content: "";
-    display: block;
-  }
-  .site-footer, .page-wrap:after {
-    height: 142px; 
+  
+  .main-content-section {
+    flex: 1;
+    min-height: 100vh;
   }
  
 
