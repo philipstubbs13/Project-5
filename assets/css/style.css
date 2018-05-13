@@ -87,7 +87,15 @@ body {
 }
 
 .navbar-nav {
-	display: inline-block;
+    display: inline-block;
+}
+
+.navbar {
+    border-bottom: 5px solid dodgerblue;
+}
+
+.footer {
+    border-top: 5px solid dodgerblue;
 }
 
 .nav-item {
@@ -125,6 +133,7 @@ body {
       width: 66px;
       height: 66px;
       border: 1px solid black;
+      margin-top: 10px;
   }
 
   .card, hr {
