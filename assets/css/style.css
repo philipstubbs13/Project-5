@@ -121,6 +121,11 @@ body {
     min-height: 100vh;
   }
  
+  .toolbox-icon {
+      width: 66px;
+      height: 66px;
+      border: 1px solid black
+  }
 
 
 
