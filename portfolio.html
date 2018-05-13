@@ -16,247 +16,417 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 </head>
-<body class="">
+<body class="Site">
   <!--Top navigation bar-->
-  <nav class="navbar navbar-expand-lg navbar-light bg-dark text-white">
-    <div class="container">
-      <a class="navbar-brand text-white" href="index.html">Phil Stubbs</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
-        aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link text-primary" href="index.html">Home
+	<nav class="navbar navbar-expand-sm navbar-light bg-dark text-white">
+		<div class="container">
+			<a class="navbar-brand text-white" href="index.html">Phil Stubbs</a>
+			<div  id="navbarText">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link text-white" href="index.html">Home
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link text-white" href="about.html">About
+						</a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link text-primary" href="portfolio.html">Portfolio
               <span class="sr-only">(current)</span>
             </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="about.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="portfolio.html">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="contact.html">Contact</a>
-          </li>
-        </ul>
-        <span class="navbar-text">
-          <a class="groovy-btn btn rounded btn-primary text-white" href="./assets/resume.pdf" target="_blank">RESUME</a>
-        </span>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link text-white" href="contact.html">Contact</a>
+					</li>
+					<li>
+						<a class="nav-link text-white" href="./assets/resume.pdf" target="_blank">Resume</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container page-wrap main-content-section mt-4">
+    <!--Portfolio pieces-->
+    <div class="row">
+      <div class="col s12 mt-3 text-center" id="projects">
+        <h1>Portfolio</h1>
       </div>
     </div>
-  </nav>
 
-	<div class="container">
     <!--Portfolio pieces-->
-          <div class="row">
-        <div class="col s12 mt-3 text-center" id="projects">
-          <h1>Portfolio</h1>
-        </div>
-      </div>
-
-      <!--Portfolio pieces-->
-        <div class="row mb-4">
-          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-            <div class="card project-card">
-              <img class="card-img-top" src="assets/images/basketball_game.jpg" alt="basketball game">
-              <div class="card-body">
-                  <h5 class="card-title">BasketballScraper</h5>
-                  <a href="https://hoops-scraper.herokuapp.com/" class="mt-1 mr-2 btn live-btn text-white" target="_blank">Live</a>
-                  <a href="https://github.com/philipstubbs13/NewsScrape" class="mt-1 btn github-btn text-white" target="_blank">GitHub Repo</a>
+    <div class="row mb-4">
+      <div class="col-xs-12">
+        <div class="card project-card">
+          <div class="card-header bg-primary text-white">
+            <h5>BasketballScraper</h5>
+          </div>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-6">
+                <img class="card-img-top" src="assets/images/scraper.png" alt="basketball game">
+                <a href="https://hoops-scraper.herokuapp.com/" class="mt-3 mr-2 btn live-btn text-white btn-primary" target="_blank">Live</a>
+                <a href="https://github.com/philipstubbs13/NewsScrape" class="mt-3 btn github-btn text-white btn-dark" target="_blank">GitHub Repo</a>
               </div>
-            </div>
+              <div class="col-md-6">
+                <p>I finished this project about the same time that the 2017-2018 NCAA Men's Basketball season came to end. Looking back at that season in particular, a lot did happen that year. I would have to say that 2017-2018 was one of the more crazy, exciting, and interesting seasons that I can remember. I mean who can forget when Alabama nearly came back from an 11-point deficit with just over 10 minutes left while playing only three players against #14 Minnesota.</p>
 
-            <div class="card project-card">
-              <img class="card-img-top" src="assets/images/sequelburger.jpg" alt="burger">
-              <!--Photo by Haseeb Jamil on Unsplash-->
-              <div class="card-body">
-                  <h5 class="card-title">Sequelized Burger</h5>
-                  <a href="https://hidden-shelf-25357.herokuapp.com/" class="mt-1 mr-2 btn live-btn text-white" target="_blank">Live</a>
-                  <a href="https://github.com/philipstubbs13/sequelizedBurger" class="mt-1 btn github-btn text-white" target="_blank">GitHub Repo</a>
-              </div>
-            </div>
-
-            <div class="card project-card">
-              <img class="card-img-top" src="assets/images/burger.jpg" alt="Card image cap">
-              <!--Photo by Thabang Mokoena on Unsplash-->
-              <div class="card-body">
-                  <h5 class="card-title">Awesome Burger</h5>
-                  <a href="https://gentle-caverns-56054.herokuapp.com/" class="mt-1 mr-2 btn live-btn text-white" target="_blank">Live</a>
-                  <a href="https://github.com/philipstubbs13/burger" class="mt-1 btn github-btn text-white" target="_blank">GitHub Repo</a>
-              </div>
-            </div>
-
-            <div class="card project-card">
-              <img class="card-img-top" src="assets/images/bamazon3.jpg" alt="Card image cap">
-              <!--Photo by Nadim Merrikh on Unsplash-->
-              <div class="card-body">
-                  <h5 class="card-title">Bamazon</h5>
-                  <a href="https://github.com/philipstubbs13/Bamazon" class="mt-1 btn github-btn text-white" target="_blank">GitHub Repo</a>
-              </div>
-            </div>
-
-            <div class="card project-card">
-              <img class="card-img-top" src="assets/images/twitter.jpg" alt="Liri command line app">
-              <!--Photo by freestocks.org on Unsplash-->
-              <div class="card-body">
-                  <h5 class="card-title">LIRI</h5>
-                  <a href="https://github.com/philipstubbs13/liri-node-app" class="mt-1 btn github-btn text-white" target="_blank">GitHub Repo</a>
-              </div>
-            </div>
-
-            <div class="card project-card">
-              <img class="card-img-top" src="assets/images/train2.jpg" alt="myTrainBuilder">
-              <!--Photo by Jake Sloop on Unsplash-->
-              <div class="card-body">
-                  <h5 class="card-title">myTrainBuilder</h5>
-                  <a href="https://fir-train-scheduler-7f4a9.firebaseapp.com/" class="mt-1 mr-2 btn live-btn text-white" target="_blank">Live</a>
-                  <a href="https://github.com/philipstubbs13/Firebase-Train-Scheduler" class="mt-1 btn github-btn text-white" target="_blank">GitHub Repo</a>
-              </div>
-            </div>
-
-            <div class="card project-card">
-              <img class="card-img-top" src="assets/images/traffic_buddy2.jpg" alt="Card image cap">
-              <!--Photo by Dan Gold on Unsplash-->
-              <div class="card-body">
-                  <h5 class="card-title">Carpool Buddy</h5>
-                  <a href="https://blooming-lowlands-71441.herokuapp.com/" class="mt-1 mr-2 btn live-btn text-white" target="_blank">Live</a>
-                  <a href="https://github.com/philipstubbs13/FriendFinder" class="mt-1 btn github-btn text-white" target="_blank">GitHub Repo</a>
-              </div>
-            </div>
-
-            <div class="card project-card">
-              <img class="card-img-top" src="assets/images/target.jpg" alt="Hangman">
-                <!--Photo by Andy Abelein on Unsplash-->
-              <div class="card-body">
-                  <h5 class="card-title">Hangman</h5>
-                  <a href="https://philipstubbs13.github.io/Hangman-Game/index.html" class="mt-1 mr-2 btn live-btn text-white" target="_blank">Live</a>
-                  <a href="https://github.com/philipstubbs13/Hangman-Game" class="mt-1 btn github-btn text-white" target="_blank">GitHub Repo</a>
+                <p>As a result of all that happened in the news, I decided to create an application that would scrape all the major news articles related to college basketball so that I (and other college basketball fans) could stay connected to the madness year round. More specifically, I used cheerio, MongoDB, Node.js, and various other technologies to scrape sports articles from <a href="http://www.espn.com/mens-college-basketball/" target="_blank">http://www.espn.com/mens-college-basketball/</a>, store them in a MongoDB database, and then add them to the application where fans can view them and leave comments.</p>
               </div>
             </div>
           </div>
+        </div>
 
-          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-              <div class="card project-card">
-                <img class="card-img-top" src="assets/images/clickme.jpg" alt="two computer screens">
-                <!--Photo by Farzad Nazifi on Unsplash-->
-                <div class="card-body">
-                  <h5 class="card-title">ClickMe</h5>
-                  <a href="https://clickme-game.herokuapp.com/" class="mt-1 mr-2 btn live-btn text-white" target="_blank">Live</a>
-                  <a href="https://github.com/philipstubbs13/ClickMe" class="mt-1 btn github-btn text-white" target="_blank">GitHub Repo</a>
+        <div class="card project-card mt-5">
+          <div class="card-header bg-primary text-white">
+            <h5>HealthTracker</h5>
+          </div>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-6">
+                <img class="card-img-top" src="assets/images/healthtracker2.png" alt="laptop">
+                <a href="https://myhealthtracker.herokuapp.com/" class="mt-3 mr-2 btn text-white btn-primary" target="_blank">Live</a>
+                <a href="https://github.com/philipstubbs13/MedLog" class="mt-3 btn text-white btn-dark" target="_blank">GitHub Repo</a>
+              </div>
+              <div class="col-md-6">
+                <p>Many people visit the doctor’s office on a regular basis and have no way of accurately keeping track of their health information, such as upcoming appointments, prescriptions, symptoms they experience away from the doctor’s office, and notes from their doctors.</p>
+
+                <p>Managing that information can be quite the challenge because it’s often written on paper and scattered across multiple documents and files. Also, information often comes from multiple doctors, and there’s no one, central location to store it all. For example, appointments might be scheduled on a paper calendar, but the notes from that appointment are located in a separate notebook. You might experience a symptom away from the doctor’s office, but you don't write it down and forget to tell your doctor at your next visit. As you can see, there are many problems with the current methods for managing one's health. Keeping track of this information is a time-consuming, manual process. As a result, this information can easily be lost, misplaced, or forgotten over time.</p>
+
+                <p>This is where HealthTracker comes in. HealthTracker is a web application that allows you to log and keep track of health information so that you can easily share and discuss that information with your doctor during your next visit. The app is designed so that you can use it to create and maintain a health journal for yourself or for another person you care for. No more having to carry around bulky notebooks and files to every doctor visit. Instead, all you need to do is bring your tablet to the doctor’s office, open up the app, and all the relevant information is there for your doctor to see.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card project-card mt-5">
+          <div class="card-header bg-primary text-white">
+            <h5>ClickMe</h5>
+          </div>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-6">
+                <img class="card-img-top" src="assets/images/clickme2.png" alt="two computer screens">
+                <a href="https://clickme-game.herokuapp.com/" class="mt-3 mr-2 btn btn-primary text-white" target="_blank">Live</a>
+                <a href="https://github.com/philipstubbs13/ClickMe" class="mt-3 btn btn-dark text-white" target="_blank">GitHub Repo</a>
+              </div>
+              <div class="col-md-6">
+                <p>Test your memory of current NBA players with the ClickMe game. ClickMe is a memory skill application. The objective of the game is to be able to go through and click each player's image once. Each time you click a player's image, your score goes up by one. If you click a player's image twice, you lose and the game resets (score goes back to 0).</p>
+                <p>This project was built using React, which is an open-source Javascript library developed at Facebook specifically for the task of developing user interfaces. React relies on a component-based architecture where elements of the user interface are broken into self-contained components.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card project-card mt-5">
+          <div class="card-header bg-primary text-white">
+            <h5>AdoptMeNow</h5>
+          </div>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-6">
+                <img class="card-img-top" src="assets/images/adoptme.png" alt="Cat">
+                <a href="https://pet-match-app.herokuapp.com/" class="mt-3 mr-2 btn btn-primary text-white" target="_blank">Live</a>
+                <a href="https://github.com/robinb242/PetMatch" class="mt-3 btn btn-dark text-white" target="_blank">GitHub Repo</a>
+              </div>
+              <div class="col-md-6">
+                <p>AdoptMeNow is a full stack, MVC (Model-View-Controller) application that connects people with animal welfare organizations (AWO) in their area and helps streamline and simplify the pet adoption process. With this application, you can do the following:</p>
+                <ul>
+                  <li>Take a compatibility assessment and receive suggested pets that reflect your personality, preferences, and interests.</li>
+                  <li>Save your assessment results.</li>
+                  <li>Search for adoptable pets at animal shelters in your area based on your assessment results. You can search by breed, type, gender, and age.</li>
+                  <li>Add the pets that you might consider adopting to a favorites list, which allows you to quickly look up those pets and their contact information later.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card project-card mt-5">
+          <div class="card-header bg-primary text-white">
+            <h5>MyCookingAssistant</h5>
+          </div>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-6">
+                <img class="card-img-top" src="assets/images/pizza2.png" alt="MyCookingAssistant app">
+                <a href="https://longshotauth.firebaseapp.com/" class="mt-3 mr-2 btn btn-primary text-white" target="_blank">Live</a>
+                <a href="https://github.com/philipstubbs13/Project-Longshot" class="mt-3 btn btn-dark github-btn text-white" target="_blank">GitHub Repo</a>
+              </div>
+              <div class="col-md-6">
+                <p>Are you having guests over for dinner tonight and don't know what to make? Do you have ingredients in your fridge and don't know what to do with them?</p>
+
+                <p>The MyCookingAssistant app is a search engine that returns the most relevant recipes from the most popular sites on the web.</p>
+
+                <p>With this app, you can</p>
+
+                <ul>
+                  <li>Search for a variety of recipes from many sources.</li>
+                  <li>Find out what ingredients you need to make a recipe.</li>
+                  <li>Favorite a recipe so that you can view it later.</li>
+                  <li>Unfavorite a recipe.</li>
+                  <li>Add your own personal notes to a recipe.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card project-card mt-5">
+          <div class="card-header bg-primary text-white">
+            <h5>myTrainBuilder</h5>
+          </div>
+          <div class="card-body">
+              <div class="row">
+                <div class="col-md-6">
+                  <img class="card-img-top" src="assets/images/train3.png" alt="myTrainBuilder">
+                  <a href="https://fir-train-scheduler-7f4a9.firebaseapp.com/" class="mt-3 mr-2 btn btn-primary text-white" target="_blank">Live</a>
+                  <a href="https://github.com/philipstubbs13/Firebase-Train-Scheduler" class="mt-3 btn btn-dark text-white" target="_blank">GitHub Repo</a>
+                </div>
+                <div class="col-md-6">
+                  <p>This project is a train schedule application that incorporates Firebase to host arrival and departure data. The app includes a form where users can enter information about a train, such as name, destination, first train time, and frequency. After a user submits the form, the app retrieves and manipulates this information with Moment.js to calculate the estimated next train time and number of minutes away. Moment.js is also used to display the times in a user friendly format (that is, hh:mm).</p>
+                  <p>When a user submits the information for a train, the train informaton is added to the Current schedule table to provide up-to-date information about various trains, such as their arrival times and how many minutes remain until they arrive at their stations. Not only is the train information added to the table, but the data is also pushed to a database that is hosted on Firebase. Source code will be developed over time to handle new features in the future.</p>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
 
-              <div class="card project-card">
-                <img class="card-img-top" src="assets/images/healthtracker.png" alt="laptop">
-                <!--Photo by rawpixel on Unsplash-->
-                <div class="card-body">
-                  <h5 class="card-title">HealthTracker</h5>
-                  <!-- <a href="" class="mt-1 mr-2 btn live-btn text-white" target="_blank">Live</a> -->
-                  <a href="https://myhealthtracker.herokuapp.com/" class="mt-1 mr-2 btn live-btn text-white" target="_blank">Live</a>
-                  <a href="https://github.com/philipstubbs13/MedLog" class="mt-1 btn github-btn text-white" target="_blank">GitHub Repo</a>
-                </div>
+        <div class="card project-card mt-5">
+          <div class="card-header bg-primary text-white">
+            <h5>Carpool Buddy</h5>
+          </div>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-6">
+                <img class="card-img-top" src="assets/images/carpool.png" alt="Card image cap">
+                <a href="https://blooming-lowlands-71441.herokuapp.com/" class="mt-3 mr-2 btn btn-primary text-white" target="_blank">Live</a>
+                <a href="https://github.com/philipstubbs13/FriendFinder" class="mt-3 btn btn-dark text-white" target="_blank">GitHub Repo</a>
               </div>
+              <div class="col-md-6">
+                <p>Carpool Buddy is a full stack application that matches you up with another user so that you can take advantage of the carpool lane and have someone to ride with to and from work. It includes a survey of 10 questions that help determine your compatibility with other users of the app. When you submit the survey, the app takes in your survey results and then compares your answers, question by question, with the answers from other users. The app does this by taking the difference between your answer and another user's answer for each question. Then, the app adds up the differences to calculate the total difference, which is the buddy compatibility score. The closest match is the user with the smallest difference. The app displays the name and photo of the user with the best overall match (this person is your carpool buddy).</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="card project-card mt-5">
+          <div class="card-header bg-primary text-white">
+            <h5>Sequelized Burger</h5>
+          </div>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-6">
+                <img class="card-img-top" src="assets/images/sequelburger2.png" alt="Card image cap">
+                <a href="https://hidden-shelf-25357.herokuapp.com/" class="mt-3 mr-2 btn btn-primary text-white" target="_blank">Live</a>
+                <a href="https://github.com/philipstubbs13/sequelizedBurger" class="mt-3 btn btn-dark text-white" target="_blank">GitHub Repo</a>
+              </div>
+              <div class="col-md-6">
+                <p>This project is a full stack application that allows you to place an order for a burger. When you place an order, the burger you enter in the form field is added to the list of burgers on the left side of the screen. Each burger in the list has a Devour me button. Clicking this button moves the burger from the list on the left side of the screen to the list on the right. The list on the right is a list of burgers that have already been devoured. Each burger in this list has a Throw away button that allows you to remove the burger, which deletes the burger from the user interface as well as from the MySQL database.</p>
+                <p>This project uses MySQL, Node, Express, Handlebars, and an ORM (Object Relational Mapper). Node and MySQL are used to query and route data in the application. Express is the backend web framework used for this application, and Handlebars is a templating language that is used to generate the HTML.</p>
+              </div>
+            </div>
+          </div>
+        </div>
 
-              <div class="card project-card">
+        <div class="card project-card mt-5">
+          <div class="card-header bg-primary text-white">
+            <h5>Awesome Burger</h5>
+          </div>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-6">
+                <img class="card-img-top" src="assets/images/burger2.png" alt="Card image cap">
+                <a href="https://gentle-caverns-56054.herokuapp.com/" class="mt-3 mr-2 btn btn-primary text-white" target="_blank">Live</a>
+                <a href="https://github.com/philipstubbs13/burger" class="mt-3 btn btn-dark text-white" target="_blank">GitHub Repo</a>
+              </div>
+              <div class="col-md-6">
+                <p>This project is a full stack application that allows you to place an order for a burger. When you place an order, the burger you enter in the form field is added to the list of burgers on the left side of the screen. Each burger in the list has a Devour me button. Clicking this button moves the burger from the list on the left side of the screen to the list on the right. The list on the right is a list of burgers that have already been devoured. Each burger in this list has a Throw away button that allows you to remove the burger, which deletes the burger from the user interface as well as from the MySQL database.</p>
+                <p>This project uses MySQL, Node, Express, Handlebars, and an ORM (Object Relational Mapper). Node and MySQL are used to query and route data in the application. Express is the backend web framework used for this application, and Handlebars is a templating language that is used to generate the HTML.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card project-card mt-5">
+          <div class="card-header bg-primary text-white">
+            <h5>Bamazon</h5>
+          </div>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-6">
+                <img class="card-img-top" src="assets/images/bamazon3.jpg" alt="Card image cap">
+                <a href="https://github.com/philipstubbs13/Bamazon" class="mt-3 btn btn-dark text-white" target="_blank">GitHub Repo</a>
+              </div>
+              <div class="col-md-6">
+                <p>This project is a command line application built using Node.js, Javascript, the inquirer npm package, and a MySQL database. It is an Amazon-like storefront that takes in customer orders on various sporting goods and outdoor items through the Bamazon Customer Portal. When a customer order is taken in the Customer Portal, the stock quantity for the product that is being purchased decreases by how much of that product the customer decides to buy.</p>
+
+                <p>Managers can also use this application through the Bamazon Manager Portal. In the Bamazon Manager Portal, managers can see all the products that are currently being sold in the store, see all products that are low in inventory (that is, stock quantity is less than 5), add inventory to an existing product, and add a new product to the store.</p>
+
+                <p>Finally, the Bamazon Supervisor Portal allows store supervisors to track product sales across departments as well as see a summary of the highest-grossing departments in the store. From this portal, supervisors are also able to create a new department if desired.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card project-card mt-5">
+          <div class="card-header bg-primary text-white">
+            <h5>LIRI</h5>
+          </div>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-6">
+                <img class="card-img-top" src="assets/images/twitter.jpg" alt="Liri command line app">
+                <a href="https://github.com/philipstubbs13/liri-node-app" class="mt-3 btn btn-dark text-white" target="_blank">GitHub Repo</a>
+              </div>
+              <div class="col-md-6">
+                <p>A command line app that allows you to retrieve your latest tweets from Twitter, song information
+                from Spotify, and movie information from OMDB.</p>
+
+                <p>LIRI is like iPhone's SIRI. However, while SIRI is a Speech Interpretation and Recognition Interface, LIRI is a Language Interpretation and Recognition Interface. LIRI is a command line node app that takes in parameters and gives you back tweets, songs, and movies.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card project-card mt-5">
+          <div class="card-header bg-primary text-white">
+            <h5>Hangman</h5>
+          </div>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-6">
+                <img class="card-img-top" src="assets/images/target.jpg" alt="Hangman">
+                <a href="https://philipstubbs13.github.io/Hangman-Game/index.html" class="mt-3 mr-2 btn btn-primary text-white" target="_blank">Live</a>
+                <a href="https://github.com/philipstubbs13/Hangman-Game" class="mt-3 btn btn-dark text-white" target="_blank">GitHub Repo</a>
+              </div>
+              <div class="col-md-6">
+                <p>Hangman game built using HTML, CSS, JavaScript, jQuery, and Bootstrap.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card project-card mt-5">
+          <div class="card-header bg-primary text-white">
+            <h5>NYT React Search</h5>
+          </div>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-6">
                 <img class="card-img-top" src="assets/images/news.jpg" alt="newspaper">
-                <!--Photo by rawpixel.com on Unsplash-->
-                <div class="card-body">
-                  <h5 class="card-title">NYT React Search</h5>
-                  <!-- <a href="" class="mt-1 mr-2 btn live-btn text-white" target="_blank">Live</a> -->
-                  <a href="https://github.com/philipstubbs13/NYT-React-Search" class="mt-1 btn github-btn text-white" target="_blank">GitHub Repo</a>
-                </div>
+                <a href="https://github.com/philipstubbs13/NYT-React-Search" class="mt-3 btn btn-dark text-white" target="_blank">GitHub Repo</a>
               </div>
-
-              <div class="card project-card">
-                <img class="card-img-top" src="assets/images/pet.jpg" alt="Cat">
-                <div class="card-body">
-                    <h5 class="card-title">AdoptMeNow</h5>
-                    <a href="https://pet-match-app.herokuapp.com/" class="mt-1 mr-2 btn live-btn text-white" target="_blank">Live</a>
-                    <a href="https://github.com/robinb242/PetMatch" class="mt-1 btn github-btn text-white" target="_blank">GitHub Repo</a>
-                </div>
+              <div class="col-md-6">
+                <p>A New York Times article search application built using React (work in progress)</p>
               </div>
+            </div>
+          </div>
+        </div>
 
-              <div class="card project-card">
+        <div class="card project-card mt-5">
+          <div class="card-header bg-primary text-white">
+            <h5>Star Wars Game</h5>
+          </div>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-6">
                 <img class="card-img-top" src="assets/images/starwars.jpg" alt="Star wars role playing game">
-                  <!--Photo by James Pond on Unsplash-->
-                <div class="card-body">
-                    <h5 class="card-title">Star Wars Game</h5>
-                    <a href="https://philipstubbs13.github.io/Star-Wars-RPG-Game/index.html" class="mt-1 mr-2 btn live-btn text-white" target="_blank">Live</a>
-                    <a href="https://github.com/philipstubbs13/Star-Wars-RPG-Game" class="mt-1 btn github-btn text-white" target="_blank">GitHub Repo</a>
-                </div>
+                <a href="https://philipstubbs13.github.io/Star-Wars-RPG-Game/index.html" class="mt-3 mr-2 btn btn-primary text-white" target="_blank">Live</a>
+                <a href="https://github.com/philipstubbs13/Star-Wars-RPG-Game" class="mt-3 btn btn-dark text-white" target="_blank">GitHub Repo</a>
               </div>
+              <div class="col-md-6">
+                <p>A Star Wars role playing game built using HTML, CSS, JavaScript, jQuery, and Bootstrap.</p>
+              </div>
+            </div>
+          </div>
+        </div>
 
-              <div class="card project-card">
+        <div class="card project-card mt-5">
+          <div class="card-header bg-primary text-white">
+            <h5>Trivia Game</h5>
+          </div>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-6">
                 <img class="card-img-top" src="assets/images/stadium.jpg" alt="Trivia Game">
-                <!--Photo by Ben Hershey on Unsplash-->
-                <div class="card-body">
-                    <h5 class="card-title">Trivia Game</h5>
-                    <a  href="https://philipstubbs13.github.io/TriviaGame/index.html" class="mr-2 btn live-btn text-white" target="_blank">Live</a>
-                    <a href="https://github.com/philipstubbs13/TriviaGame" class="mt-1 btn github-btn text-white" target="_blank">GitHub Repo</a>
-                </div>
+                <a  href="https://philipstubbs13.github.io/TriviaGame/index.html" class="mt-3 mr-2 btn btn-primary text-white" target="_blank">Live</a>
+                <a href="https://github.com/philipstubbs13/TriviaGame" class="mt-3 btn btn-dark text-white" target="_blank">GitHub Repo</a>
               </div>
-
-              <div class="card project-card">
-                <img class="card-img-top" src="assets/images/pizza.jpg" alt="MyCookingAssistant app">
-                <!--Photo by ivan Torres on Unsplash-->
-                <div class="card-body">
-                    <h5 class="card-title">MyCookingAssistant</h5>
-                    <a href="https://longshotauth.firebaseapp.com/" class="mt-1 mr-2 btn live-btn text-white" target="_blank">Live</a>
-                    <a href="https://github.com/philipstubbs13/Project-Longshot" class="mt-1 btn github-btn text-white" target="_blank">GitHub Repo</a>
-                </div>
+              <div class="col-md-6">
+                <p>This app is a trivia game that was created using JavaScript for the logic and jQuery to manipulate the HTML. Specifically, the trivia questions, possible answers/choices, correct answers, and images are stored in an array. A count variable was created to keep track of the index of the currently displayed trivia question. When the game starts, the count variable starts at 0. The game will display a question and the list of choices for that question based on the value of the count variable. For each question answered (or not answered), the count goes up by 1.</p>
+                <p>The app also uses a timer. Specifically, it uses the setInterval method to decrement the timer every 1 second and the clearInterval method to stop the timer when it reaches 0. When the timer reaches 0, the current question and choices are hidden from the HTML, and the next question will appear after a few seconds of delay.</p>
+                <p>As you go through the questions in the game, the app keeps track of the number of correct answers with the correctAnswersTally variable and the number of incorrect answers with the incorrectAnswersTally variable. If the incorrect answer is chosen, it was decided to not show the correct answer during the game. When the game is over (no more questions are left), the app displays the value of the correctAnswersTally variable to the user. A "Try again?" button is appended to the page so that the user can play again to improve upon his/her score. The app also uses Bootstrap for styling and layout.</p>
               </div>
+            </div>
+          </div>
+        </div>
 
-              <div class="card project-card">
+        <div class="card project-card mt-5">
+          <div class="card-header bg-primary text-white">
+            <h5>Constructor Hangman</h5>
+          </div>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-6">
                 <img class="card-img-top" src="assets/images/skyline.jpg" alt="Minneapolis skyline">
-                <!--Photo by Daniel McCullough on Unsplash-->
-                <div class="card-body">
-                    <h5 class="card-title">Constructor Hangman</h5>
-                    <a href="https://github.com/philipstubbs13/constructor-hangman" class="mt-1 btn github-btn text-white" target="_blank">GitHub Repo</a>
-                </div>
+                <a href="https://github.com/philipstubbs13/constructor-hangman" class="mt-3 btn btn-dark text-white" target="_blank">GitHub Repo</a>
               </div>
+              <div class="col-md-6">
+                <p>This project is a command line version of the classic Hangman game. This game uses similar logic to the browser-based Hangman game I created, but with this game, I created a command line version using Javascript constructor functions to create letter and word objects, the inquirer npm package to prompt users to guess a letter, and Node.js to run the Javascript code from the command line.</p>
+              </div>
+            </div>
+          </div>
+        </div>
 
-              <div class="card project-card">
+        <div class="card project-card mt-5">
+          <div class="card-header bg-primary text-white">
+            <h5>Athlete hall of gifs</h5>
+          </div>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-6">
                 <img class="card-img-top" src="assets/images/basketball2.jpg" alt="Athlete hall of gifs">
-                <!--Photo by NeONBRAND on Unsplash-->
-                <div class="card-body">
-                    <h5 class="card-title">Athlete hall of gifs</h5>
-                    <a href="https://philipstubbs13.github.io/Giphy-API-Project/index.html" class="mt-1 mr-2 btn live-btn text-white" target="_blank">Live</a>
-                    <a href="https://github.com/philipstubbs13/Giphy-API-Project" class="mt-1 btn github-btn text-white" target="_blank">GitHub Repo</a>
-                </div>
+                <a href="https://philipstubbs13.github.io/Giphy-API-Project/index.html" class="mt-3 mr-2 btn btn-primary text-white" target="_blank">Live</a>
+                <a href="https://github.com/philipstubbs13/Giphy-API-Project" class="mt-3 btn btn-dark text-white" target="_blank">GitHub Repo</a>
               </div>
+              <div class="col-md-6">
+                <p>This website uses the GIPHY API to populate the site with gifs of your favorite athletes. Specifically, it uses the jQuery AJAX method to perform AJAX GET requests to the query URL to get data from the GIPHY API. To perform an AJAX call, a query URL needs to be constructed. The query URL consists of the host, path, search term (the name of the athlete), the maximum number of gifs to return, and an API key. After the query URL is constructed, the URL is used to perform the request. When the request is complete, the site uses Javascript and jQuery to add static gif images to the HTML. You can select an athlete from a pre-defined list or add your own athlete to the list if the athlete you want to search for is not available. To play a gif, click it. Click it again to pause.</p>
+              </div>
+            </div>
+          </div>
+        </div>
 
-              <div class="card border">
+        <div class="card project-card mt-5">
+          <div class="card-header bg-primary text-white">
+            <h5>Crystal Collectors</h5>
+          </div>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-6">
                 <img class="card-img-top" src="assets/images/crystalclear.jpg" alt="Crystal Collectors">
-                <!--Photo by Hao Zhang on Unsplash-->
-                <div class="card-body">
-                    <h5 class="card-title">Crystal Collectors</h5>
-                    <a href="https://philipstubbs13.github.io/week-4-game/index.html" class="mr-2 btn live-btn text-white" target="_blank">Live</a>
-                    <a href="https://github.com/philipstubbs13/week-4-game" class="mt-1 btn github-btn text-white" target="_blank">GitHub Repo</a>
-                </div>
+                <a href="https://philipstubbs13.github.io/week-4-game/index.html" class="mt-3 mr-2 btn btn-primary text-white" target="_blank">Live</a>
+                <a href="https://github.com/philipstubbs13/week-4-game" class="mt-3 btn btn-dark text-white" target="_blank">GitHub Repo</a>
               </div>
+              <div class="col-md-6">
+                <p>A crystal collecting game built using HTML, CSS, JavaScript, jQuery, and Bootstrap.</p>
+              </div>
+            </div>
           </div>
         </div>
-	</div>
+      </div>   
+    </div>
 
-	<div class="card page-footer bg-dark text-center text-white">
-			<div class="card-body">
-				<h5 class="card-title">Phil Stubbs</h5>
-        <p class="card-text">Web Developer. Project Manager. Tech Enthusiast</p>
-           <!--Social icons-->
-        <div class="row mt-2">
-          <div class="col-md-12 mb-3 text-center">
-            <a class="pr-2 social" href="https://github.com/philipstubbs13" target="_blank"><img src="assets/images/if_mark-github_298822.svg" alt="GitHub icon" id="github-logo"></a>
-            <a class="pr-2 social" href="https://www.linkedin.com/in/philipjstubbs/" target="_blank"><img src="assets/images/if_Linkedin_381380.svg" alt="LinkedIn icon" id="linkedin-logo"></a>
-            <a class="social" href="https://twitter.com/iamPhilStubbs" target="_blank"><img src="assets/images/if_Twitter_381374.svg" alt="Twitter icon" id="twitter-logo"></a>
-            <a class="pr-2 social" href="https://www.facebook.com/phil.stubbs.13" target="_blank"><img src="assets/images/if_Facebook_381389.svg" alt="Facebook icon" id="facebook-logo"></a>   
-          </div>
-        </div>
-				<small>© 2018 Phil Stubbs</small>
-			</div>
-	</div>
+  <div class="card page-footer bg-dark text-white mt-5">
+    <div class="card-body footer">
+      <div class="container">
+        <h5 class="card-title">Phil Stubbs</h5>
+        <p class="card-text">Full stack code generator and tech nerd</p>
+        <small>© 2018 Phil Stubbs</small>
+      </div>
+    </div>
+  </div>
 
 <!--Link to javascript file-->
 <script type="text/javascript" src="assets/javascript/logic.js"></script>
