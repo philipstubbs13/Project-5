@@ -62,6 +62,7 @@ body {
 	width: 200px;
 	height: 225px;
 	max-width: 100%;
+    border: 2px solid black;
 }
 
 #github-logo {
