@@ -87,6 +87,11 @@ body {
     height: 53px;
 }
 
+#angellist-logo {
+    width: 53px;
+    height: 53px;
+}
+
 .navbar-nav {
     display: inline-block;
 }
