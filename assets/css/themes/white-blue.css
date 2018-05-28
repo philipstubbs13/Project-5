@@ -1,0 +1,14 @@
+/* Theme */
+
+main {
+    background: black;
+    color: dodgerblue;
+}
+
+.icons-social a {
+    color: dodgerblue;
+}
+
+.icons-social a svg path {
+    fill: dodgerblue;
+}
