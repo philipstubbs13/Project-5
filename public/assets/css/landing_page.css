@@ -79,3 +79,7 @@ main>.button {
     width: 2.65rem;
     height: 2.65rem;
 }
+
+a {
+    text-decoration: none;
+}

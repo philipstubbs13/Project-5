@@ -27,4 +27,9 @@ module.exports = function(app) {
     app.get("/code", function(req, res) {
         res.render("portfolio");
     });
+
+    //HTML route for landing page
+    app.get("/", function(req, res) {
+        res.render('landing', {layout: 'landing-layout'});
+    });
 }
