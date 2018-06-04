@@ -32,4 +32,9 @@ module.exports = function(app) {
     app.get("/", function(req, res) {
         res.render('landing', {layout: 'landing-layout'});
     });
+
+    //HTML route for 404 not found page
+    app.get("*", function(req, res) {
+        res.render('nomatch', {layout: 'landing-layout'});
+    });
 }
