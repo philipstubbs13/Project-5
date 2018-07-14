@@ -33,6 +33,11 @@ module.exports = function(app) {
         res.render('landing', {layout: 'landing-layout'});
     });
 
+    //HTML route for split toggle page
+    app.get("/toggle", function(req, res) {
+        res.render('split', {layout: 'split-toggle'});
+    });
+
     //HTML route for 404 not found page
     app.get("*", function(req, res) {
         res.render('nomatch', {layout: 'landing-layout'});
