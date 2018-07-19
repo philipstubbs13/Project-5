@@ -1,3 +1,11 @@
+/* CSS Varibles  */
+:root {
+    --primary: dodgerblue;
+    --dark: #333;
+    --light: #fff;
+    --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
 /* Google font - Lato */
 body {
     font-family: 'Lato', sans-serif;
@@ -11,12 +19,20 @@ body {
 
 /* Live button color */
 .live-btn {
-    background-color:#ffd700;
+    background-color: var(--primary);
+}
+
+.live-btn:hover {
+    background-color: var(--dark);
 }
 
 /*GitHub Repo button color*/
 .github-btn {
-    background-color: #800000;
+    background-color: var(--primary);
+}
+
+.github-btn:hover {
+    background-color: var(--dark);
 }
 
 /*Styling for cards on portfolio page */
@@ -39,7 +55,8 @@ body {
 
 /*Adding margin to the top of the portfolio cards so page doesn't look so cluttered*/
 .card {
-	margin-top: 40px;
+    margin-top: 40px;
+    box-shadow: var(--shadow);
 }
 
 /*Add margin above contact section */
@@ -52,6 +69,7 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+    background-color: #ccc !important;
   }
 
   main {
