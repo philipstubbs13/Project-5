@@ -11,10 +11,13 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
-/* Accordion header color */
-#headingOne, #headingThree, #headingFive, #headingTwo, #headingFour, #headingSix {
-    background-color: #800000;
-    color: #ffd700;
+.btn {
+    background-color: var(--primary);
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    background-color: var(--dark);
 }
 
 /* Live button color */
@@ -39,13 +42,6 @@ body {
 .project-card {
     border-style: solid;
     border-color: black;
-}
-
-/* Resume, Projects, and Contact links on About/Home page*/
-.groovy-btn {
-    text-decoration: none;
-    background-color: #800000;
-    color: #ffd700;
 }
 
 .promotion-images {
