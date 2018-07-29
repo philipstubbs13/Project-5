@@ -192,6 +192,11 @@ body {
     text-decoration: none;
   }
 
+  /* Contact form style */
+  #contact-form {
+      padding: 2em;
+  }
+
   /* Media Queries */
 @media(max-width: 700px) {
     .main-nav ul {
