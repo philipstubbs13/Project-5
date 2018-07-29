@@ -197,6 +197,17 @@ body {
       padding: 2em;
   }
 
+  /* Alert that is displayed on the contact page when user successfully submits form */
+  .alert {
+    text-align: center;
+    padding: 10px;
+    background: #79c879;
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: none;
+}
+
   /* Media Queries */
 @media(max-width: 700px) {
     .main-nav ul {
