@@ -208,6 +208,12 @@ body {
     display: none;
 }
 
+/* Style for Google MAP */
+#map{
+    height:400px;
+    width: 100%;
+}
+
   /* Media Queries */
 @media(max-width: 700px) {
     .main-nav ul {

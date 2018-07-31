@@ -56,6 +56,57 @@ function saveMessage(name, email, phone, message) {
     });
 }
 
+//Google MAPS API
+function initMap(){
+    // Map options
+    var options = {
+        zoom: 8,
+        center: {lat:44.9778,lng:-93.2650}
+    }
+
+    // New map
+    var map = new google.maps.Map(document.getElementById('map'), options);
+
+    // Array of markers
+    var markers = [
+        {
+            coords:{lat:44.7677,lng:-93.2777},
+            iconImage: '',
+            content: '<h3>Burnsville, MN</h3>'
+        }
+    ];
+
+    // Loop throug markers
+    for(var i=0; i < markers.length; i++) {
+        addMarker(markers[i]);
+    }
+
+    // Add Marker Function
+    function addMarker(props){
+        var marker = new google.maps.Marker({
+            position:props.coords,
+            map: map,
+            // icon: props.iconImage
+        });
+
+        // Check for customicon
+        if(props.iconImage){
+            //Set icon image
+            marker.setIcon(props.iconImage);
+        }
+
+        // Check content
+        if(props.content){
+            var infoWindow = new google.maps.InfoWindow({
+                content: props.content
+            });
+
+            marker.addListener('click', function(){
+                infoWindow.open(map, marker);
+            });
+        }
+    }
+}    
 
 
 
