@@ -1,6 +1,14 @@
 {{!-- Display this if user is not authenticated. --}}
 <div class="not-authenticated main-content-section">
-    <h3 id="heading">Log in to check out my site!</h3>
+    <div id="heading" class="card login-card text-center">
+        <div class="card-header text-white">
+            Welcome to my portfolio site
+        </div>
+        <div class="card-body">
+            <p class="card-text">Log in with Facebook to explore the awesome projects I'm working on!</p>
+            <div id="fb-btn" scope="public_profile,email, user_birthday, user_location, user_posts" onlogin="checkLoginState();" class="fb-login-button" data-max-rows="1" data-size="large" data-button-type="continue_with" data-show-faces="false" data-auto-logout-link="false" data-use-continue-as="false"></div>
+        </div>
+    </div>
     <div id="profile">
 
     </div>
