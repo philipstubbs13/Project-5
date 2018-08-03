@@ -81,6 +81,9 @@ function buildFeed(feed){
     document.getElementById('feed').innerHTML = output;
 }
 
+const authContent = document.getElementsByClassName('authenticated');
+const unauthContent = document.getElementsByClassName('not-authenticated');
+
 function setElements(isLoggedIn){
     if(isLoggedIn){
         document.getElementById('logout').style.display = 'block';
@@ -88,6 +91,12 @@ function setElements(isLoggedIn){
         document.getElementById('feed').style.display = 'block';
         document.getElementById('fb-btn').style.display = 'none';
         document.getElementById('heading').style.display = 'none';
+        for (i = 0; i < authContent.length; i++) {
+            authContent[i].style.display = "block";
+        }
+        for (i = 0; i < unauthContent.length; i++) {
+            unauthContent[i].style.display = "none";
+        }
 
     } else {
         document.getElementById('logout').style.display = 'none';
@@ -95,6 +104,12 @@ function setElements(isLoggedIn){
         document.getElementById('feed').style.display = 'none';
         document.getElementById('fb-btn').style.display = 'block';
         document.getElementById('heading').style.display = 'block';
+        for (i = 0; i < authContent.length; i++) {
+            authContent[i].style.display = "none";
+        }
+        for (i = 0; i < unauthContent.length; i++) {
+            unauthContent[i].style.display = "block";
+        }
 
     }
 }

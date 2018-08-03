@@ -1,7 +1,11 @@
 <!--Navbar-->
 {{> portfolio/navbar-block }}
 
-<div class="container page-wrap main-content-section">
+{{!-- Display if user is not authenticated --}}
+{{> portfolio/not-authenticated }}
+
+{{!-- Display if user is authenticated. --}}
+<div class="container page-wrap main-content-section authenticated">
     <!--Navigation-->
     {{> portfolio/navbar2-block }}
 

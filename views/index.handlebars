@@ -2,8 +2,12 @@
 {{> portfolio/navbar-block }}
 
 <!--Introduction/Bio section-->
-<main>	
-    <div class="container">
+<main>
+    {{!-- Display if user is not authenticated. --}}
+    {{> portfolio/not-authenticated }}
+
+    {{!-- Display if user is authenticated. --}}
+    <div class="container authenticated">
         <!--Navigation-->
         {{> portfolio/navbar2-block }}
         
