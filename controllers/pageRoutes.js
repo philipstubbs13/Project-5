@@ -4,6 +4,11 @@ var express = require("express");
 // Page routes
 module.exports = function(app) {
     //HTML route for home page
+    app.get("/login", function(req, res) {
+        res.render("login");
+    });
+
+    //HTML route for home page
     app.get("/home", function(req, res) {
         res.render("index");
     });

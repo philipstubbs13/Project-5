@@ -1,8 +1,10 @@
 <nav class="navbar navbar-expand-sm navbar-light bg-dark text-white">
     <div class="container">
         <a class="navbar-brand text-white" href="/home">Phil Stubbs</a>
+        <li><a id="logout" href="#" onclick="logout()">Logout</a></li>
         <fb:login-button 
-        scope="public_profile,email"
+        id="fb-btn"
+        scope="public_profile,email, user_birthday, user_location, user_posts"
         onlogin="checkLoginState();">
         </fb:login-button>
     </div>
