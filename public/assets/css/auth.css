@@ -1,24 +1,29 @@
+/* If user is not authenticated, do not show profile, logout button, feed, and authenticated content. */
 #profile, #logout, #feed, .authenticated {
     display: none
 }
 
+/* Styling for the card that will appear if the user is not authenticated. */
 .login-card {
     max-width: 60%;
     margin: 0 auto; 
     float: none; 
-    margin-top: 120px;
+    margin-top: 50px;
 }
 
+/* Styling for facebook login button */
 .login-btn {
     margin-top: 20px;
     display: block;
 }
 
+/* Styling for the card header of the login card. */
 .login-card .card-header {
     background-color: var(--dark);
     font-size: 22px;
 }
 
+/* Styling for the image that appears on the login card if user is not authenticated. */
 .login-img {
     width: 200px;
     height: 225px;
@@ -28,12 +33,19 @@
     box-shadow: var(--shadow);
 }
 
+/* The info section is displayed on the login card (when the user is not authenticated). */
 .info {
     margin-top: 20px;
 }
 
+/* The text that is displayed on the login card (when the user is not authenticated). */
 .login-text {
-    font-size: 20px;
+    font-size: 17px;
+}
+
+/* Container div for the Facebook login button and associated text (that appear when the user is not authenticated. */
+.login-div {
+    margin-top: 20px;
 }
 
 
