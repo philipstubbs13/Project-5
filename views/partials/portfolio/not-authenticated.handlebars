@@ -1,16 +1,43 @@
 {{!-- Display this if user is not authenticated. --}}
-<div class="not-authenticated main-content-section">
-    <div id="heading" class="card login-card text-center">
-        <div class="card-header text-white">
-            Welcome to my portfolio site
-        </div>
-        <div class="card-body">
-            <p class="card-text">Log in with Facebook to explore the awesome projects I'm working on!</p>
-            <div id="fb-btn" scope="public_profile,email, user_birthday, user_location, user_posts" onlogin="checkLoginState();" class="fb-login-button" data-max-rows="1" data-size="large" data-button-type="continue_with" data-show-faces="false" data-auto-logout-link="false" data-use-continue-as="false"></div>
+<div class="main-content-section">
+    <div class="container">
+        <div id="heading">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card login-card text-center">
+                        <div class="card-header text-white">
+                            Welcome to my portfolio
+                        </div>
+                        <div class="card-body">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <img class="rounded img-fluid login-img" src="assets/images/me.jpg" alt="Phil Stubbs selfie" >
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h1>Phil Stubbs</h1>
+                                        <div class="info">
+                                            <h5 class="info-type">Email</h5>
+                                            <p class="login-text">philipstubbs13@gmail.com</p>
+                                            <h5 class="info-type">Phone</h5>
+                                            <p class="login-text">952-454-3933</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                    <p class="card-text login-text text-center">Log in to explore the awesome projects I'm working on!</p>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div id="fb-btn" scope="public_profile,email, user_birthday, user_location, user_posts" onlogin="checkLoginState();" class="fb-login-button login-btn" data-max-rows="1" data-size="large" data-button-type="continue_with" data-show-faces="false" data-auto-logout-link="false" data-use-continue-as="false"></div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <a class="text-white btn login-btn" href="./assets/resume.pdf" target="_blank"> View Resume</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <div id="profile">
-
-    </div>
-    <div id="feed"></div>
 </div>

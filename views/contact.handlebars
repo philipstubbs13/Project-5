@@ -1,8 +1,10 @@
 <!--Navbar-->
 {{> portfolio/navbar-block }}
 
-{{!-- Display if user is not authenticated --}}
-{{> portfolio/not-authenticated }}
+{{!-- Display if user is not authenticated. --}}
+<div class="not-authenticated">
+    {{> portfolio/not-authenticated }}
+</div>
 
 {{!-- Display if user is authenticated --}}
 <div class="container page-wrap main-content-section authenticated">
