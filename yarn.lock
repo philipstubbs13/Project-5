@@ -249,6 +249,10 @@ graceful-fs@^4.1.2:
   version "4.1.11"
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.1.11.tgz#0e8bdfe4d1ddb8854d64e04ea7c00e2a026e5658"
 
+handlebars-require@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/handlebars-require/-/handlebars-require-0.1.1.tgz#51e35acfca5982e2207803cc36e8dba30964e4c9"
+
 handlebars@^4.0.11, handlebars@^4.0.5:
   version "4.0.11"
   resolved "https://registry.yarnpkg.com/handlebars/-/handlebars-4.0.11.tgz#630a35dfe0294bc281edae6ffc5d329fc7982dcc"

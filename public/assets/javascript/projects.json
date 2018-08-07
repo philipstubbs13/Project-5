@@ -1,0 +1,12 @@
+[
+    {
+        "id": "1",
+        "title": "BasketballScraper",
+        "review": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!",
+        "live_link": "https://hoops-scraper.herokuapp.com/",
+        "github_link": "https://github.com/philipstubbs13/NewsScrape",
+        "image": "assets/images/scraper.png",
+        "description_para_one": "I finished this project about the same time that the 2017-2018 NCAA Men's Basketball season came to end. Looking back at that season in particular, a lot did happen that year. I would have to say that year was one of the more exciting, interesting seasons that I can remember. I mean who can forget when Alabama nearly came back from an 11-point deficit with just over 10 minutes left while playing only three players against #14 Minnesota.",
+        "description_para_two": "As a result of all that happened in the news, I decided to create an app that would scrape news articles related to college basketball so that I (and other college basketball fans) could stay connected to the madness year round. More specifically, I used cheerio, MongoDB, Node.js, and various other technologies to scrape sports articles, store the articles in a MongoDB database, and then display them in the app where fans can view them and leave comments."
+    }
+]
