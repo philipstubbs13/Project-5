@@ -1,4 +1,6 @@
 // Facebook Login Stuff
+document.querySelector('.not-authenticated').style.display = 'none';
+
 window.fbAsyncInit = function() {
     FB.init({
     appId      : '1214903891982606',
@@ -8,7 +10,18 @@ window.fbAsyncInit = function() {
     });
          
     FB.getLoginStatus(function(response) {
-        statusChangeCallback(response);
+        document.querySelector('.not-authenticated').style.display = 'none';
+        document.querySelector('.authenticated').style.display = 'none';
+        document.querySelector('.loading').style.display = 'block';
+        document.querySelector('.loading').classList.add('spinner-3');
+        // Mimic server req
+        setTimeout(() => {
+            document.querySelector('.loading').classList.remove('spinner-3');
+            document.querySelector('.authenticated').style.display = 'block';
+            document.querySelector('.not-authenticated').style.display = 'block';
+            document.querySelector('.loading').style.display = 'none';
+            statusChangeCallback(response);
+        }, 2000);
     });        
 };
 
